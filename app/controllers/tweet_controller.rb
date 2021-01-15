@@ -4,6 +4,10 @@ before_action :authenticate_user!, excwpt:[:index]
     @tweet = Tweet.new
   end
 
+  def create
+    #のちほど
+  end
+
   def index
     @tweets = Tweet.available
   end
@@ -12,6 +16,4 @@ before_action :authenticate_user!, excwpt:[:index]
     @tweet = Tweet.find(params[:id])
   end
 
-  def create
-  end
 end
