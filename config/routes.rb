@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'tweets#index'
   #get 'tweet/new'
   #get 'tweet/index'
   #get 'tweet/show'
