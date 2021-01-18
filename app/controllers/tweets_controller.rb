@@ -22,7 +22,7 @@ before_action :authenticate_user!, except:[:index]
 
   private
     def tweet_params
-      params.require(:tweet),permit(:body)
+      params.require(:tweet).permit(:body)
 
     end
 end
