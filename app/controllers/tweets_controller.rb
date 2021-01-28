@@ -18,6 +18,7 @@ before_action :authenticate_user!, except:[:index]
 
   def show
     @tweet = Tweet.find(params[:id])
+    @user = @tweet.user
   end
 
   private
