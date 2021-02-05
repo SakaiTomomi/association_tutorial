@@ -1,8 +1,8 @@
-<h1>Tweet#index</h1>
+<h1>投稿一覧</h1>
 <p>Find me in app/views/tweet/index.html.erb</p>
 
 <% @tweets.each do |tweet| %>
   <hr>
   <p><span>email: </span><%= link_to tweet.user.email, user_path(tweet.user.id) %></p>
-  <p><span>ツイート内容: </span><%= link_to tweet.body, tweet_path(tweet.id) %></p>
+  <p><span>投稿内容: </span><%= link_to tweet.body, tweet_path(tweet.id) %></p>
 <% end %>
